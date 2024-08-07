@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Email",
+    "content": "rizqikurniawan1863@gmail.com",
+    "images":"",
+    "icon": "/assets/icons/mail.svg"
+  },
+  {
+    "title": "Github",
+    "content": "Cynchronos",
+    "images":"",
+    "icon": "/assets/icons/github.svg"
+  },
+  {
+    "title": "Hobby",
+    "content": "Gaming, Coding",
+    "images":"",
+    "icon": "/assets/icons/joystick.svg"
+  },
+  {
+    "title": "Language",
+    "content": "Python, Javascript",
+    "images": ["/assets/icons/logos_python.svg", "/assets/icons/logos_javascript.svg"],
+    "icon": "/assets/icons/html.svg"
+  }
+]

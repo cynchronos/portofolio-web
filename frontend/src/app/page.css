@@ -1,0 +1,30 @@
+/* Add these styles to your CSS file */
+.sidebar {
+  @apply hidden lg:block;
+  @apply w-2/12 lg:w-2/12 md:w-3/12 sm:w-full;
+  @apply h-full;
+  @apply bg-[#272727];
+  @apply rounded-2xl;
+  @apply overflow-y-auto;
+}
+
+.sidebar-button {
+  @apply lg:hidden;
+  @apply block;
+  @apply w-10;
+  @apply h-10;
+  @apply bg-[#272727];
+  @apply rounded-full;
+  @apply absolute;
+  @apply top-4;
+  @apply left-4;
+  @apply z-50;
+}
+
+.sidebar-button:hover {
+  @apply bg-[#3D3E3E];
+}
+
+.sidebar-button:focus {
+  @apply bg-[#FFD700];
+}

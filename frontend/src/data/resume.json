@@ -1,0 +1,30 @@
+{
+  "education":[
+    {
+      "place": "Universitas Teknologi Yogyakarta",
+      "position": "Bachelor of Informatics",
+      "year": "2021 - Present",
+      "description":""
+    },
+    {
+      "place": "SMK Negeri 1 Bantul",
+      "position": "Computer and Network Engineering",
+      "year": "2018 - 2021",
+      "description":""
+    }
+  ],
+  "experiences":[
+    {
+      "place": "Teaching Assistant",
+      "position": "Universitas Teknologi Yogyakarta",
+      "year": "Feb 2024 - Jun 2024",
+      "description":"- Teaching students about Databases and Fundamental Theory\n- Train students about the theory and implementation of Entity Relational Diagram, Flowchart, and other Diagrams to build the Databases\n- Train students about implementations of DDL, DML, and DCL into relational databases with MySQL"
+    },
+    {
+      "place": "IT Support Staff - Internship",
+      "position": "Universitas Negeri Yogyakarta",
+      "year": "Des 2019 - Mar 2020",
+      "description":""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "programmingLanguages": [
+    {
+      "name": "Python",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "PyTorch",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+    },
+    {
+      "name": "React",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    {
+      "name": "Next.js",
+      "icon": "/assets/images/nextjs-icon.webp"
+    },
+    {
+      "name": "Express",
+      "icon": "/assets/images/express-icon.webp"
+    },
+    {
+      "name": "NestJS",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+    }
+  ],
+  "learning": [
+    {
+      "name": "Dart",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+    },
+    {
+      "name": "Flutter",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+    }
+  ]
+}

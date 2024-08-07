@@ -1,0 +1,28 @@
+[
+  {
+    "link": "https://wa.me/087821087663",
+    "icon": "/assets/icons/whatsapp.png",
+    "borderColor": "#25d366",
+    "backgroundHover": "#25d366"
+  },
+  {
+    "link": "https://mail.google.com/mail/?view=cm&fs=1&to=rizqikurniawan1863@gmail.com",
+    "icon": "/assets/icons/gmail.png",
+    "borderColor": "#c71610",
+    "backgroundHover": "#c71610"
+  },
+  {
+    "link": "https://github.com/cynchronos",
+    "icon": "/assets/icons/github-logo.png",
+    "borderColor": "#FFFFFF",
+    "backgroundHover": "#FFFFFF"
+
+  },
+  {
+    "link": "https://www.linkedin.com/in/dimas-rizqi-9695941b6/",
+    "icon": "/assets/icons/linkedin.png",
+    "borderColor": "#0077B5",
+    "backgroundHover": "#0077B5"
+
+  }
+]
