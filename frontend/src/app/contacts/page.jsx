@@ -13,7 +13,7 @@ const Contacts = () => {
     <MainContent title={'Contacts'}>
       <span className="relative h-4/5 max-4/5-full overflow-y-auto px-12">
         <span className="flex flex-col w-full justify-center items-center pt-5">
-          <p className="text-5xl font-extrabold text-slate-200">Let's Collaborate!</p>
+          <p className="text-5xl font-extrabold text-slate-200">Let&apos;s Collaborate!</p>
           <div className="w-7/12 grid grid-cols-2 gap-8 m-14">
             {
               contactsData.map((contact, index) => {
