@@ -4,7 +4,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <aside className="flex bg-[#272727] flex-auto w-3/12 rounded-2xl justify-center bg-opacity-80 overflow-auto">
+    <aside className="flex bg-[#272727] flex-auto w-3/12 rounded-2xl justify-center bg-opacity-85 overflow-auto">
       <span className="flex flex-col w-3/4 h-full items-center">
         <div className="inline-block mt-14 mb-5 w-36 h-36">
           <Image

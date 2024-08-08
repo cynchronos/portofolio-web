@@ -5,7 +5,7 @@ import AboutMe from '@/app/aboutMe'
 
 const MainContent = ({ title = 'About Me', children }) => {
   return (
-    <aside className="block bg-[#272727] flex-auto w-full rounded-2xl bg-opacity-70">
+    <aside className="block bg-[#272727] flex-auto w-full rounded-2xl bg-opacity-85">
         <div className="relative">
           <span className="flex absolute right-0 bg-[#313131] w-fit h-16 float-end rounded-tr-2xl rounded-bl-2xl justify-center items-center gap-8 bg-opacity-60 py-7 px-12">
             {navMenu.map((menu, index) => {
