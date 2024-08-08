@@ -20,9 +20,11 @@ module.exports = {
     'hover:bg-[#c71610]',
     'hover:bg-[#FFFFFF]',
     'hover:bg-[#0077B5]',
+    'hover:bg-[#000000]',
     'border-[#25d366]',
     'border-[#c71610]',
     'border-[#FFFFFF]',
     'border-[#0077B5]',
+    'border-[#000000]'
   ]
 };

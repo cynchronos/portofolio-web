@@ -13,9 +13,9 @@
   },
   {
     "link": "https://github.com/cynchronos",
-    "icon": "/assets/icons/github-logo.png",
+    "icon": "/assets/icons/github.svg",
     "borderColor": "#FFFFFF",
-    "backgroundHover": "#FFFFFF"
+    "backgroundHover": "#000000"
 
   },
   {
