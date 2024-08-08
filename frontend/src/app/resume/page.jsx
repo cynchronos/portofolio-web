@@ -8,7 +8,7 @@ import skillData from '@/data/skills.json'
 const resume = () => {
   return (
     <MainContent title={'Resume'}>
-      <span className="block h-4/5 max-h-full overflow-y-auto px-12 pb-5">
+      <span className="flex flex-col px-12 pb-5">
         <div className="flex gap-4 items-center mb-2">
           <Image
             src="/assets/icons/book.svg"

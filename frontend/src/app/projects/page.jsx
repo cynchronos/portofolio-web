@@ -6,7 +6,7 @@ import Cards from '@/components/cards'
 const Projects = () => {
   return (
     <MainContent title={'Projects'}>
-     <span className="block h-4/5 max-h-full overflow-y-auto px-12 pb-5">
+     <span className="flex flex-col px-12 pb-5">
      <Cards />
      </span>
     </MainContent>
