@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <span className="flex flex-col px-12 pb-5">
       <p className="text-justify text-lg font-medium whitespace-pre-line">{aboutMe.description}</p>
-      <p className="text-3xl font-bold mt-16">What I'm Doing</p>
+      <p className="text-3xl font-bold mt-16">What I&apos;m Doing</p>
       <div className="flex w-full justify-center">
         <span className="grid grid-cols-2 gap-y-9 gap-x-12 w-11/12 mt-10">
           {aboutMe.offers.map((item, index) => (
