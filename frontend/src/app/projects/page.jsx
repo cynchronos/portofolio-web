@@ -2,12 +2,25 @@
 import React from 'react'
 import MainContent from '@/components/mainContent'
 import Cards from '@/components/cards'
+import projects from '@/data/projects.json'
 
 const Projects = () => {
   return (
     <MainContent title={'Projects'}>
-     <span className="flex flex-col px-12 pb-5">
-     <Cards />
+      <span className="flex flex-col px-12 pb-5">
+        {
+          projects.map((project, index) => {
+            return (
+              <Cards
+                key={index}
+                cardName={project.name}
+                description={project.description}
+                images={project.images}
+              />
+            )
+          })
+        }
+          
      </span>
     </MainContent>
   )

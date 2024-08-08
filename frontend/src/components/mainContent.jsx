@@ -23,7 +23,7 @@ const MainContent = ({ title = 'About Me', children }) => {
             <p className="text-3xl font-bold pt-13">{title}</p>
             <span className="block w-7 bg-[#FFD700] h-1 mt-5 mb-3"></span>
           </div>
-          <div className="overflow-y-auto">
+          <div className="overflow-y-auto scrollbar-none">
             {
               title == 'About Me' ? <AboutMe /> : children
 
