@@ -7,14 +7,14 @@ const Cards = ({cardName, description, images}) => {
     setIsHover(!isHover)
   }
   return (
-    <div className="relative mt-7">
+    <div className="relative mt-7 w-full">
       {
         isHover ?
-        <div className="absolute transition ease-in-out inset-0 bg-white w-3/12 rounded-lg h-64 blur scale-105"></div>
+        <div className="absolute transition ease-in-out inset-0 bg-white rounded-lg blur scale-105"></div>
         : null
       }
       <span
-      className="block transition ease-in-out relative w-3/12 h-64 bg-[#2F2F2F] rounded-lg hover:scale-105"
+      className="block transition ease-in-out relative bg-[#2F2F2F] rounded-lg hover:scale-105"
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       >
@@ -28,7 +28,7 @@ const Cards = ({cardName, description, images}) => {
           />
         </div>
         <div className="flex-wrap">
-          <p className="text-xl font-bold text-white pl-4 pt-1">{cardName}</p>
+          <p className="text-xl font-bold text-white pl-4 pt-1 pb-5">{cardName}</p>
         </div>
       </span>
     </div>

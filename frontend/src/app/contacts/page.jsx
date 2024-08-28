@@ -14,7 +14,7 @@ const Contacts = () => {
       <span className="flex flex-col px-12 pb-5">
         <span className="flex flex-col w-full justify-center items-center pt-5">
           <p className="text-5xl font-extrabold text-slate-200">Let&apos;s Collaborate!</p>
-          <div className="w-7/12 grid grid-cols-2 gap-8 m-14">
+          <div className="w-full md:w-9/12 lg:w-7/12 grid grid-cols-2 gap-8 m-14">
             {
               contactsData.map((contact, index) => {
                 return (

@@ -7,7 +7,7 @@ import projects from '@/data/projects.json'
 const Projects = () => {
   return (
     <MainContent title={'Projects'}>
-      <span className="flex flex-col px-12 pb-5">
+      <span className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-12 pb-5">
         {
           projects.map((project, index) => {
             return (
