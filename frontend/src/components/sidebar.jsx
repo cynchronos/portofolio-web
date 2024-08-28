@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <aside className="flex flex-auto w-full lg:w-3/12  justify-center my-6 lg:my-0 px-4 md:px-10 lg:px-0">
       <div className="flex flex-col bg-[#272727] w-full items-center rounded-2xl bg-opacity-85 overflow-auto scrollbar-none">
-        <span className="flex flex-col w-3/4 h-full items-center">
+        <span className="flex flex-col w-10/12 md:w-3/4 h-full items-center">
           <div className="inline-block mt-14 mb-5 w-36 h-36">
             <Image
               src="/assets/images/profile.jpg"
@@ -35,8 +35,8 @@ const Sidebar = () => {
                     <span className='block flex-auto w-10/12'>
                       <p className='text-md font-medium'>{bio.title}</p>
                       {bio.images == ""
-                        ? <p className='text-md font-light overflow-hidden text-ellipsis'>{bio.content}</p>
-                        : <div className="flex flex-wrap gap-3">
+                        ? <p className='text-md font-light overflow-hidden text-ellipsis whitespace-nowrap'>{bio.content}</p>
+                        : <div className="flex flex-wrap gap-3 ">
                           {bio.images.map((image, index) => {
                             return (
                               <Image

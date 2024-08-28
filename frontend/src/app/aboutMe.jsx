@@ -4,10 +4,10 @@ import aboutMe from '@/data/aboutMe.json';
 
 const AboutMe = () => {
   return (
-    <span className="flex flex-col px-12 pb-5">
+    <span className="flex flex-col px-6 md:px-12 pb-5">
       <p className="text-justify text-lg font-medium whitespace-pre-line">{aboutMe.description}</p>
       <p className="text-3xl font-bold mt-16">What I&apos;m Doing</p>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full md:justify-center">
         <span className="flex flex-col md:grid md:grid-cols-2 gap-y-9 gap-x-0 md:gap-x-12 w-11/12 mt-10">
           {aboutMe.offers.map((item, index) => (
             <div className="relative overflow-visible" key={item}>

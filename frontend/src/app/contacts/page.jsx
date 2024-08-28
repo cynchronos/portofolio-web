@@ -11,9 +11,9 @@ import contactsData from '@/data/contactsData.json'
 const Contacts = () => {
   return (
     <MainContent title={'Contacts'}>
-      <span className="flex flex-col px-12 pb-5">
+      <span className="flex flex-col px-6 md:px-12 pb-5">
         <span className="flex flex-col w-full justify-center items-center pt-5">
-          <p className="text-5xl font-extrabold text-slate-200">Let&apos;s Collaborate!</p>
+          <p className=" text-4xl md:text-5xl font-extrabold text-slate-200">Let&apos;s Collaborate!</p>
           <div className="w-full md:w-9/12 lg:w-7/12 grid grid-cols-2 gap-8 m-14">
             {
               contactsData.map((contact, index) => {
@@ -30,28 +30,28 @@ const Contacts = () => {
             }
           </div>
         </span>
-        <div className="flex justify-center items-center mt-20 gap-x-2">
-          <p className="text-lg">Created with</p>
+        <div className="flex justify-center items-center mt-0 lg:mt-16 gap-x-2 text-sm md:text-lg">
+          <p>Created with</p>
           <FcLike className="size-6" />
-          <p className="text-lg">by</p>
+          <p>by</p>
           <Link href={contactsData[2].link}>
             <Image
               src="/assets/images/profile.jpg"
               alt="Next.js"
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full w-7 md:w-10"
             />
           </Link>
-          <p className="text-lg">x</p>
+          <p>x</p>
           <Image
             src="/assets/images/kafka.png"
             alt="Next.js"
             width={40}
             height={40}
-            className="rounded-full"
+            className="rounded-full w-7 md:w-10"
           />
-          <p className="text-lg">using</p>
+          <p>using</p>
           <Link href="https://tailwindcss.com/">
             <Image
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
