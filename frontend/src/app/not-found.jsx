@@ -17,7 +17,7 @@ const NotFound = () => {
           <p className="text-5xl font-bold text-[#d3c297]">404</p>
           <p className="text-5xl font-bold text-[#eeeeee]">Page not found</p>
         </div>
-        <p className="text-lg font-bold p-4 text-[#959595]">The page you're searching for isn&apos;t available</p>
+        <p className="text-lg font-bold p-4 text-[#959595]">The page you&apos;re searching for isn&apos;t available</p>
       </div>
     </MainContent>
   )
