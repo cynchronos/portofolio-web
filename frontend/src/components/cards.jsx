@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const Cards = ({cardName, description, images}) => {
+const Cards = ({ cardName, description, images }) => {
   const [isHover, setIsHover] = useState(false)
   const handleHover = () => {
     setIsHover(!isHover)
   }
   return (
-    <div className="relative mt-7 w-full">
+    <div className="relative w-full">
       {
         isHover ?
-        <div className="absolute transition ease-in-out inset-0 bg-white rounded-lg blur scale-105"></div>
-        : null
+          <div className="absolute transition ease-in-out inset-0 bg-white rounded-lg blur scale-105"></div>
+          : null
       }
       <span
-      className="block transition ease-in-out relative bg-[#2F2F2F] rounded-lg hover:scale-105"
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHover}
+        className="flex flex-col transition ease-in-out relative bg-[#2F2F2F] rounded-lg hover:scale-105 h-auto"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHover}
       >
         <div className="relative w-full h-40">
           <Image
@@ -28,7 +29,13 @@ const Cards = ({cardName, description, images}) => {
           />
         </div>
         <div className="flex-wrap">
-          <p className="text-xl font-bold text-white pl-4 pt-1 pb-5">{cardName}</p>
+          <p className="text-xl font-bold text-white pl-4 pt-1">{cardName}</p>
+        </div>
+        <div className="flex-wrap">
+          <p className="text-sm font-light text-white pl-4 pt-1 truncate ...">{description}</p>
+        </div>
+        <div className="flex justify-end p-4 pt-5">
+          <p className={`text-md ${isHover ? 'text-[#FFD700] font-semibold':'text-white font-medium'}`}>More info &raquo;</p>
         </div>
       </span>
     </div>

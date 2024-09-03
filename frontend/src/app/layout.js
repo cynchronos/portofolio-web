@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-          <video className="absolute w-screen h-screen object-cover" src="/assets/media/background.webm" autoPlay loop muted></video>
-          <DashboardLayout>
-            {children}
-          </DashboardLayout>
+      <video className="absolute w-screen h-screen object-cover" src="/assets/media/background.webm" autoPlay loop muted></video>
+      <DashboardLayout>
+        {children}
+      </DashboardLayout>
       </body>
     </html>
   );

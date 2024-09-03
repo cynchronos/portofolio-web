@@ -1,9 +1,25 @@
 [
   {
-    "name": "Messenger App",
-    "description": "A simple messenger app that allows users to send messages to each other.",
-    "images": [
-      "/assets/images/messenger-app-1.png"
+    "title": "Utiyi Messenger App",
+    "slug": "messenger-app",
+    "description": "\tFrom May to September 2022, our team of two dedicated developers worked tirelessly to bring a revolutionary messaging platform to life. We are thrilled to introduce Utiyi Messenger App, a cutting-edge communication tool designed to connect people who want to communicate with each other. Built using the powerful MERN technology stack, Utiyi Messenger App is poised to change the way we interact online. MERN, which stands for MongoDB, Express.js, React, and Node.js, provides a solid foundation for our app, enabling us to build fast, scalable, and secure applications.\n\n\tWhat sets Utiyi Messenger App apart from other messaging platforms is its innovative Contact Explore feature. Inspired by Telegram, this feature allows users to connect with others without needing to know their specific account details first. This game-changing functionality opens up new possibilities for networking, collaboration, and socializing. With Utiyi Messenger App, the boundaries of online communication are expanded, enabling users to forge meaningful connections with ease.",
+    "credits":[
+      {
+        "name": "@cynchronos",
+        "github": "https://github.com/cynchronos"
+      },
+      {
+        "name": "@zenthicmc",
+        "github": "https://github.com/zenthicmc"
+      }
+    ],
+    "url":"https://utiyi-messenger-app.herokuapp.com",
+    "status": "Deprecated",
+    "assets": [
+      "/assets/images/messenger-app-1.png",
+      "/assets/images/messenger-app-2.png",
+      "/assets/images/messenger-app-3.png",
+      "/assets/images/messenger-app-4.png"
     ]
   }
 ]

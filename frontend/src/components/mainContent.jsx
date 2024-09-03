@@ -11,19 +11,19 @@ const MainContent = ({ title = 'About Me', children }) => {
             {navMenu.map((menu, index) => {
               return (
                 <Link key={index} href={menu.url}>
-                  <p className={`button text-md md:text-lg font-semibold ${title == menu.name ? null : 'hover:text-[#FF00CD]'} ${title == menu.name ? 'text-[#FFD700]' : 'text-white'}`}>{menu.name}</p>
+                  <p className={`button text-md md:text-lg font-semibold ${title == menu.name ? null : 'hover:text-[#FF00CD]'} active:text-[#FFD700] ${title == menu.name ? 'text-[#FFD700]' : 'text-white'}`}>{menu.name}</p>
                 </Link>
               )
             }
             )}
           </span>
         </div>
-        <span className="flex flex-col w-full h-full mx-auto pb-5 overflow-visible">
+        <span className="flex flex-col w-full h-full mx-auto pb-3 overflow-visible">
           <div className="pt-24 md:pt-16  px-6 md:px-12 ">
             <p className="text-3xl font-bold pt-13 ">{title}</p>
             <span className="block w-7 bg-[#FFD700] h-1 mt-5 mb-3"></span>
           </div>
-          <div className="overflow-y-auto scrollbar-none">
+          <div className="flex flex-col h-full overflow-y-auto scrollbar-none">
             {
               title == 'About Me' ? <AboutMe /> : children
 
