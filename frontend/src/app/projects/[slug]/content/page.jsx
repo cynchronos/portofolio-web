@@ -50,8 +50,8 @@ const Page = ({ params }) => {
           <div className="flex flex-col items-center pt-5 ">
             <h1 className="h-1 text-3xl md:text-4xl font-bold">{project.title}</h1>
           </div>
-          <div className="relative overflow-visible">
-            <div className="absolute inset-0 bg-gray-200 blur mx-5 md:mx-16 lg:mx-32 mb-10 mt-20"></div>
+          <div className="relative overflow-visible mb-10 mt-20">
+            <div className="absolute inset-0 bg-gray-200 blur mx-5 md:mx-16 lg:mx-32"></div>
             <span className="block relative">
               <Image
                 src={project.assets[0]}
@@ -59,7 +59,7 @@ const Page = ({ params }) => {
                 width={1920}
                 height={1080}
                 layout="responsive"
-                className="px-5 md:px-16 lg:px-32 pb-10 pt-20"
+                className="px-5 md:px-16 lg:px-32"
               />
             </span>
           </div>
@@ -118,7 +118,7 @@ const Page = ({ params }) => {
             <button onClick={() => swiperRef.current.slidePrev()}>
               <FaChevronLeft size={30} color="white" />
             </button>
-            <span className='w-9/12 md:w-10/12 lg:w-7/12 h-full'>
+            <span className='w-9/12 md:w-10/12 lg:w-[22rem] xl:w-[32rem] 2xl:w-[45rem] h-full'>
               <Swiper
                 // navigation
                 effect="coverflow"

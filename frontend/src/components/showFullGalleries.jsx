@@ -29,7 +29,7 @@ const ShowFullGalleries = ({ assets }) => {
   }
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-10" onClick={() => setShowGalleries(false)}>
+    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-10" onClick={() => setShowGalleries(false)}>
       <div className="flex flex-col w-full h-full justify-center items-center">
         <div className="flex w-10/12 lg:w-7/12 z-30" onClick={handlePointerImage}>
           <Swiper
