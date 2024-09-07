@@ -57,7 +57,7 @@ const ShowFullGalleries = ({ assets }) => {
             ))}
           </Swiper>
         </div>
-        <div className="flex w-11/12 h-24 md:h-32 lg:w-10/12 lg:h-52 justify-center items-center mt-8" onClick={handlePointerImage}>
+        <div className="flex w-11/12 h-16 md:h-32 lg:w-10/12 lg:h-52 justify-center items-center mt-8" onClick={handlePointerImage}>
             <Swiper
               onSwiper={setThumbsSwiper}
               loop={true}
