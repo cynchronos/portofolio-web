@@ -20,7 +20,7 @@ const ShowFullGalleries = ({ assets }) => {
   const [activeImage, setActiveImage] = useState(0);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  function handlePointerImage(e){
+  function handlePointerImage(e) {
     e.stopPropagation();
   }
 
@@ -58,36 +58,34 @@ const ShowFullGalleries = ({ assets }) => {
           </Swiper>
         </div>
         <div className="flex w-11/12 h-16 md:h-32 lg:w-10/12 lg:h-52 justify-center items-center mt-8" onClick={handlePointerImage}>
-            <Swiper
-              onSwiper={setThumbsSwiper}
-              loop={true}
-              spaceBetween={20}
-              slidesPerView={
-                assets.length > 4 ? 4 : assets.length
-              }
-              freeMode={true}
-              watchSlidesProgress={true}
-              modules={[FreeMode, Thumbs, Navigation]}
-              className="thumb-image w-full h-full"
-            >
-              {assets.map((asset, index) => {
-                console.log(activeImage, index)
-                return (
-                  <SwiperSlide key={index}>
-                    <Image
-                      src={asset}
-                      alt={`image ${index}`}
-                      width={1920}
-                      height={1080}
-                      layout="cover"
-                      className={`h-full w-full object-cover rounded-lg`}
-                      loading="lazy"
-                    />
-                  </SwiperSlide>
-                )
-              })}
-            </Swiper>
-          </div>
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            loop={true}
+            spaceBetween={20}
+            slidesPerView={
+              assets.length > 4 ? 4 : assets.length
+            }
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Thumbs, Navigation]}
+            className="thumb-image w-full h-full"
+          >
+            {assets.map((asset, index) => (
+              <SwiperSlide key={index}>
+                <Image
+                  src={asset}
+                  alt={`image ${index}`}
+                  width={1920}
+                  height={1080}
+                  layout="cover"
+                  className={`h-full w-full object-cover rounded-lg`}
+                  loading="lazy"
+                />
+              </SwiperSlide>
+            )
+            )}
+          </Swiper>
+        </div>
       </div>
     </div>
   )
