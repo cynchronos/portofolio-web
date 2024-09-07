@@ -34,7 +34,7 @@ import projects from '@/data/projects.json'
 
 export const GalleryContext = createContext()
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [showGalleries, setShowGalleries] = useState(false)
   const swiperRef = useRef()
   const project = projects.find(project => project.slug === params.slug)
@@ -188,4 +188,4 @@ const page = ({ params }) => {
   )
 }
 
-export default page
+export default Page
