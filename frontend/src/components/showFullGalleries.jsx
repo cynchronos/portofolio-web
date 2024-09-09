@@ -1,4 +1,3 @@
-'use client'
 import React, { useState, useContext } from 'react'
 import Image from 'next/image';
 import './styles/showFullGalleries.css';
@@ -13,19 +12,12 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 import { GalleryContext } from '@/app/projects/[slug]/content/page'
 
-
-
 const ShowFullGalleries = ({ assets }) => {
   const [showGalleries, setShowGalleries] = useContext(GalleryContext)
-  const [activeImage, setActiveImage] = useState(0);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   function handlePointerImage(e) {
     e.stopPropagation();
-  }
-
-  function handleActiveImage(swiper) {
-    setActiveImage(swiper.activeIndex);
   }
 
   return (
@@ -40,7 +32,6 @@ const ShowFullGalleries = ({ assets }) => {
             navigation
             thumbs={{ swiper: thumbsSwiper }}
             className="main-image rounded-xl"
-            onSlideChange={handleActiveImage}
           >
             {assets.map((asset, index) => (
               <SwiperSlide key={index}>

@@ -1,7 +1,5 @@
-'use client'
 import React from 'react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import { FcLike } from 'react-icons/fc'
 import MainContent from '@/components/mainContent'

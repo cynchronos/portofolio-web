@@ -47,8 +47,13 @@ const Page = ({ params }) => {
     <>
       <MainContent title="Projects">
         <div className="flex flex-col px-6 md:px-12 pb-10">
-          <div className="flex flex-col items-center pt-5 ">
-            <h1 className="h-1 text-3xl md:text-4xl font-bold">{project.title}</h1>
+          <div className="mt-5">
+            <div className="invisible md:visible relative">
+              <Link href="/projects">
+                <p className="absolute whitespace-pre transition-colors duration-100 hover:text-[#FF00CD] active:text-[#FFD700] text-lg font-semibold">&laquo;  Back</p>
+              </Link>
+            </div>
+            <h1 className="h-1 text-3xl md:text-4xl font-bold text-center">{project.title}</h1>
           </div>
           <div className="relative overflow-visible mb-10 mt-20">
             <div className="absolute inset-0 bg-gray-200 blur mx-5 md:mx-16 lg:mx-32"></div>
@@ -170,7 +175,7 @@ const Page = ({ params }) => {
 
           <div className="flex items-center justify-center mt-10 ">
             <button
-              className="flex items-center justify-center p-2 rounded-md bg-[#313131] gap-x-1 border border-green-500 hover:bg-green-500 transition-colors duration-200  focus:border-green-600 focus:bg-green-600"
+              className="flex items-center justify-center p-2 rounded-md bg-[#313131] gap-x-1 border border-[#FF00CD] hover:bg-[#FF00CD] transition-colors duration-200  focus:border-none focus:bg-[#FFD700]"
               onClick={() => setShowGalleries(true)}
             >
               <AiFillEye size={20} color='white' />

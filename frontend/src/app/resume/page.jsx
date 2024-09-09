@@ -45,7 +45,9 @@ const resume = () => {
         <div className="flex flex-wrap ml-11 gap-4 w-1/2">
           {
             skillData.programmingLanguages.map((item, index) => (
-              <Skill data={item} key={index} />
+              <div key={index}>
+                <Skill data={item} />
+              </div>
             ))
           }
         </div>
@@ -61,7 +63,9 @@ const resume = () => {
         <div className="flex flex-wrap ml-11 gap-4 w-1/2">
           {
             skillData.frameworks.map((item, index) => (
-              <Skill data={item} key={index} />
+              <div key={index}>
+                <Skill data={item} />
+              </div>
             ))
           }
         </div>
@@ -77,7 +81,9 @@ const resume = () => {
         <div className="flex flex-wrap ml-11 gap-4 w-1/2">
           {
             skillData.learning.map((item, index) => (
-              <Skill data={item} key={index} />
+              <div key={index}>
+                <Skill data={item} />
+              </div>
             ))
           }
         </div>

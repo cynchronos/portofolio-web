@@ -1,4 +1,3 @@
-'use client';
 import React from 'react'
 import MainContent from '@/components/mainContent'
 import Cards from '@/components/cards'
