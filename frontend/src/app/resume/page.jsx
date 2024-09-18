@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import MainContent from '@/components/mainContent'
+import DashboardLayout from '../dashboardLayout'
 import TimeLine from '@/components/timeline'
 import Skill from '@/components/skill'
 import resumeData from '@/data/resume.json'
 import skillData from '@/data/skills.json'
 const resume = () => {
   return (
-    <MainContent title={'Resume'}>
+    <DashboardLayout title={'Resume'}>
       <span className="flex flex-col px-6 md:px-12 pb-5">
         <div className="flex gap-4 items-center mb-2">
           <Image
@@ -88,7 +88,7 @@ const resume = () => {
           }
         </div>
       </span>
-    </MainContent>
+    </DashboardLayout>
   )
 }
 

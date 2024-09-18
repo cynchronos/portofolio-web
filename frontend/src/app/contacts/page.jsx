@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FcLike } from 'react-icons/fc'
-import MainContent from '@/components/mainContent'
+import DashboardLayout from '../dashboardLayout'
 import ContactCards from '@/components/contactCards'
 import contactsData from '@/data/contactsData.json'
 
 const Contacts = () => {
   return (
-    <MainContent title={'Contacts'}>
+    <DashboardLayout title={'Contacts'}>
       <span className="flex flex-col px-6 md:px-12 pb-5">
         <span className="flex flex-col w-full justify-center items-center pt-5">
           <p className=" text-4xl md:text-5xl font-extrabold text-slate-200">Let&apos;s Collaborate!</p>
@@ -60,7 +60,7 @@ const Contacts = () => {
           </Link>
         </div>
       </span>
-    </MainContent>
+    </DashboardLayout>
   )
 }
 

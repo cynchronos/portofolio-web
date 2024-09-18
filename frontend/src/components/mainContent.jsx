@@ -3,7 +3,7 @@ import Link from 'next/link'
 import navMenu from '../data/navMenu.json'
 import AboutMe from '@/app/aboutMe'
 
-const MainContent = ({ title = 'About Me', children }) => {
+const MainContent = ({ title, children }) => {
   return (
     <aside className="block bg-[#272727] flex-auto w-full rounded-none lg:rounded-2xl bg-opacity-85">
         <div className="relative">
@@ -18,12 +18,12 @@ const MainContent = ({ title = 'About Me', children }) => {
             )}
           </span>
         </div>
-        <span className="flex flex-col w-full h-full mx-auto pb-3 overflow-visible">
+        <span className="flex flex-col w-full h-full mx-auto pb-3">
           <div className="pt-24 md:pt-16  px-6 md:px-12 ">
             <p className="text-3xl font-bold pt-13 ">{title}</p>
             <span className="block w-7 bg-[#FFD700] h-1 mt-5 mb-3"></span>
           </div>
-          <div className="flex flex-col h-full overflow-y-auto scrollbar-none">
+          <div className="flex flex-col h-full overflow-y-auto no-scrollbar">
             {
               title == 'About Me' ? <AboutMe /> : children
 

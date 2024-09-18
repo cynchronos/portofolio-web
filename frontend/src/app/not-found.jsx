@@ -1,10 +1,11 @@
 import React from 'react'
 import MainContent from '@/components/mainContent'
+import DashboardLayout from './dashboardLayout'
 import Image from 'next/image'
 
 const NotFound = () => {
   return (
-    <MainContent title='Not Found'>
+    <DashboardLayout title='Not Found'>
       <div className="flex flex-col py-16 h-full items-center">
         <Image
           src="/assets/icons/404.webp"
@@ -19,7 +20,7 @@ const NotFound = () => {
         </div>
         <p className="text-lg font-bold p-4 text-[#959595]">The page you&apos;re searching for isn&apos;t available</p>
       </div>
-    </MainContent>
+    </DashboardLayout>
   )
 }
 

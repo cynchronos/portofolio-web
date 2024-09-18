@@ -11,7 +11,7 @@ import { EffectCoverflow, Navigation } from 'swiper/modules'
 import { AiFillOpenAI, AiFillEye } from "react-icons/ai";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import ShowFullGalleries from '@/components/showFullGalleries';
-import MainContent from '@/components/mainContent'
+import DashboardLayout from '@/app/dashboardLayout';
 import projects from '@/data/projects.json'
 
 
@@ -45,7 +45,7 @@ const Page = ({ params }) => {
 
   return (
     <>
-      <MainContent title="Projects">
+      <DashboardLayout title="Projects">
         <div className="flex flex-col px-6 md:px-12 pb-10">
           <div className="mt-5">
             <div className="invisible md:visible relative">
@@ -183,7 +183,7 @@ const Page = ({ params }) => {
             </button>
           </div>
         </div>
-      </MainContent>
+      </DashboardLayout>
       <GalleryContext.Provider value={[showGalleries, setShowGalleries]}>
         {
           showGalleries && <ShowFullGalleries assets={project.assets} />

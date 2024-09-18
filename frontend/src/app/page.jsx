@@ -1,8 +1,8 @@
 import React from "react";
-import MainContent from "@/components/mainContent";
+import DashboardLayout from "./dashboardLayout";
 
 export default function Home({children}) {
   return (
-        <MainContent/>
+        <DashboardLayout title="About Me"/>
   );
 }
