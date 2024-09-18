@@ -4,6 +4,8 @@ import cors from "@elysiajs/cors";
 import mainRoutes from "./routes/main.routes";
 import { logger } from "@bogeychan/elysia-logger";
 
+const port = process.env.PORT || 3000;
+
 const app = new Elysia()
   .use(cors(
     {
@@ -17,7 +19,7 @@ const app = new Elysia()
     stream: process.stdout,
   }))
   .use(mainRoutes)
-  .get("/", () => "Hello Elysia").listen(3000);
+  .get("/", () => "Hello Elysia").listen(port);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
