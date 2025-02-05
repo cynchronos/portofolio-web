@@ -15,6 +15,11 @@
       "title": "Mobile Apps",
       "description": "Develop intuitive and high-performance mobile applications for seamless user experiences.",
       "icon": "/assets/icons/phone-gold.svg"
+    },
+    {
+      "title": "Artificial Intelligence",
+      "description": "Building an AI-powered solutions that help businesses and improve customer satisfaction.",
+      "icon": "/assets/icons/robot.svg"
     }
   ]
 }

@@ -1,8 +1,8 @@
 import { Elysia } from "elysia";
-import projectController from "../controllers/project.controller";
+import projectsController from "../controllers/projects.controller";
 
 const mainRoutes = new Elysia({ prefix: '/api' })
-  .use(projectController)
+  .use(projectsController)
   .get("/", () => "Hello Elysia main routes")
 
 export default mainRoutes;

@@ -10,25 +10,22 @@ const AboutMe = () => {
       <div className="flex w-full md:justify-center">
         <span className="flex flex-col md:grid md:grid-cols-2 gap-y-9 gap-x-0 md:gap-x-12 w-11/12 mt-10">
           {aboutMe.offers.map((item, index) => (
-            <div className="relative overflow-visible" key={index}>
-              <div className="absolute inset-0 bg-gray-200 rounded-2xl blur"></div>
-              <span key={index} className="block relative bg-[#2F2F2F] rounded-2xl h-full">
-                <span className="flex flex-1 w-full p-7 gap-4">
-                  <span className="block h-full">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={48}
-                      height={48}
-                    />
-                  </span>
-                  <div className="flex flex-1 flex-col">
-                    <p className="text-2xl font-bold">{item.title}</p>
-                    <p className="text-lg font-light mt-2">{item.description}</p>
-                  </div>
+            <span key={index} className="block relative bg-[#2F2F2F] rounded-2xl h-full shadow-neon">
+              <span className="flex flex-1 w-full p-7 gap-4">
+                <span className="block h-full">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={48}
+                    height={48}
+                  />
                 </span>
+                <div className="flex flex-1 flex-col">
+                  <p className="text-2xl font-bold">{item.title}</p>
+                  <p className="text-lg font-light mt-2">{item.description}</p>
+                </div>
               </span>
-            </div>
+            </span>
           ))}
         </span>
       </div>

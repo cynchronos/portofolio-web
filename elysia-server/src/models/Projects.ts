@@ -1,7 +1,6 @@
-import mongoose from "mongoose";
-const { Schema, model } = mongoose;
+import { Schema, model } from "mongoose";
 
-const projectSchema:any = new Schema({
+const projectSchema: Schema = new Schema({
   title: {
     type: String,
     required: true,
@@ -15,7 +14,7 @@ const projectSchema:any = new Schema({
     type: String,
     required: true,
   },
-  credits : {
+  credits: {
     type: [{
       name: {
         type: String,
@@ -28,7 +27,7 @@ const projectSchema:any = new Schema({
     }],
     required: true,
   },
-  url:{
+  url: {
     type: String,
     required: true,
   },
@@ -36,7 +35,7 @@ const projectSchema:any = new Schema({
     type: String,
     required: true,
   },
-  assets : {
+  assets: {
     type: [String],
     required: true,
   },

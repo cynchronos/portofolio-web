@@ -2,7 +2,7 @@ import { Elysia } from "elysia";
 import ProjectService from "../services/project.service";
 
 
-const projectController = new Elysia({ prefix: "/projects" })
+const projectsController = new Elysia({ prefix: "/projects" })
   .decorate({
     Service: new ProjectService()
   })
@@ -46,4 +46,4 @@ const projectController = new Elysia({ prefix: "/projects" })
   }
 )
 
-export default projectController;
+export default projectsController;

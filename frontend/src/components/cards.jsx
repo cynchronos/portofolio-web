@@ -9,14 +9,9 @@ const Cards = ({ cardName, description, images }) => {
     setIsHover(!isHover)
   }
   return (
-    <div className="relative w-full">
-      {
-        isHover ?
-          <div className="absolute transition ease-in-out inset-0 bg-white rounded-lg blur scale-105"></div>
-          : null
-      }
+    <div className="w-full">
       <span
-        className="flex flex-col transition ease-in-out relative bg-[#2F2F2F] rounded-lg hover:scale-105 h-auto"
+        className="flex flex-col transition ease-in-out relative bg-[#2F2F2F] rounded-lg hover:scale-105 h-auto hover:shadow-neon"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >
@@ -25,7 +20,7 @@ const Cards = ({ cardName, description, images }) => {
             src={images.length > 0 ? images[0] : images}
             alt="Kafka"
             layout="fill"
-            objectFit="cover"
+            objectFit={images[0] == '/assets/images/image-not-found.png' ? 'contain' : 'cover'}
             className="rounded-t-lg p-2"
           />
         </div>
