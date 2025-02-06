@@ -20,9 +20,10 @@ jobs:
         uses: oven-sh/setup-bun@v1
 
       - name: bun install, build, and start
+        working-directory: ./elysia-server
         run: |
-          cd elysia-server && bun install
-          cd elysia-server && bun run build --if-present
+          bun install
+          bun run build --if-present
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
