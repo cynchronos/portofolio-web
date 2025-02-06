@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+mongoose.set('strictQuery', true);
 const mongodbURI:string = process.env.MONGODB_URI || "";
 
 // create retry connection if not connected with loop
